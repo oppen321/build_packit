@@ -25,7 +25,7 @@ jobs:
     - name: Download Armvirt Firmware
       id: download
       run: |
-        wget https://github.com/oppen321/openwrt_packit/releases/download/firmware/openwrt-armvirt-64-generic-rootfs.tar.gz
+        wget https://github.com/oppen321/openwrt_packit/releases/download/Firmware_immortalwrt/openwrt-armsr-armv8-generic-rootfs.tar.gz
 
     - name: Package OpenWrt Firmware
       uses: unifreq/openwrt_packit@master
