@@ -26,7 +26,7 @@ jobs:
       id: download
       run: |
         wget https://github.com/oppen321/openwrt_packit/releases/download/Firmware_openwrt/openwrt-armsr-armv8-generic-rootfs.tar.gz
-
+        
     - name: Package OpenWrt Firmware
       uses: unifreq/openwrt_packit@master
       env:
