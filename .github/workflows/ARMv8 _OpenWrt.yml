@@ -25,12 +25,12 @@ jobs:
     - name: Download Armvirt Firmware
       id: download
       run: |
-        wget https://github.com/oppen321/openwrt_packit/releases/download/Firmware_immortalwrt/immortalwrt-armsr-armv8-generic-rootfs.tar.gz
+        wget https://github.com/oppen321/openwrt_packit/releases/download/Firmware_Lean/openwrt-armvirt-64-generic-rootfs.tar.gz
 
     - name: Package OpenWrt Firmware
       uses: unifreq/openwrt_packit@master
       env:
-        OPENWRT_ARMVIRT: immortalwrt-armsr-armv8-generic-rootfs.tar.gz
+        OPENWRT_ARMVIRT: openwrt-armvirt-64-generic-rootfs.tar.gz
         PACKAGE_SOC: all
         KERNEL_VERSION_NAME: 6.1.y_6.6.y
 
